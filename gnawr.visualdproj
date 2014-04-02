@@ -193,22 +193,22 @@
  <Folder name="gnawr">
   <Folder name="src">
    <Folder name="table">
-    <File path="src\table\bitmap.d" />
+    <File path="src\gnawr\table\bitmap.d" />
    </Folder>
    <Folder name="util">
-    <File path="src\util\sound.d" />
-    <File path="src\util\task.d" />
+    <File path="src\gnawr\util\sound.d" />
+    <File path="src\gnawr\util\task.d" />
    </Folder>
-   <File path="src\bitfont.d" />
-   <File path="src\event.d" />
-   <File path="src\gnawr.d" />
-   <File path="src\mixer.d" />
-   <File path="src\render.d" />
-   <File path="src\tface.d" />
-   <File path="src\tlandscape.d" />
-   <File path="src\tscene.d" />
-   <File path="src\tship.d" />
-   <File path="src\tweapon.d" />
+   <File path="src\gnawr\bitfont.d" />
+   <File path="src\gnawr\event.d" />
+   <File path="src\gnawr\gnawr.d" />
+   <File path="src\gnawr\mixer.d" />
+   <File path="src\gnawr\render.d" />
+   <File path="src\gnawr\tface.d" />
+   <File path="src\gnawr\tlandscape.d" />
+   <File path="src\gnawr\tscene.d" />
+   <File path="src\gnawr\tship.d" />
+   <File path="src\gnawr\tweapon.d" />
   </Folder>
  </Folder>
 </DProject>

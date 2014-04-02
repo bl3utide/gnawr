@@ -1,1 +1,7 @@
 [Bb]in/
+*.dll
+*.obj
+*.exe
+*.def
+*.log
+makefile

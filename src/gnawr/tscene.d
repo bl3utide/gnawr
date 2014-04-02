@@ -75,7 +75,7 @@ public:
     this.targetBoss = _targetBoss;
     new BlindWipeIn();
     new BlueScape();
-    gameShip = new BlueShip(0.0f, -4.0f);
+    gameShip = new RedShip(0.0f, -4.0f);
   }
   
   override bool move() {
