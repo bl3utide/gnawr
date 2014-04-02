@@ -22,6 +22,10 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 const char* SCREEN_CAPTION = "gnawr";
 
+// 外部ファイルに関わる変数
+const string imageDir = "image/";
+const string soundDir = "sound/";
+
 // ゲームに関わる変数
 SDL_Surface *screen = null;
 GameEvent gameEvent;

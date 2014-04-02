@@ -45,8 +45,7 @@ private void closeGL() {
 }
 
 private void loadTexture(string filename, uint* texture) {
-  string fileDir = "image/";
-  string filePath = fileDir ~ filename;
+  string filePath = imageDir ~ filename;
   SDL_Surface* surface;
   
   surface = SDL_LoadBMP(cast(const(char*))filePath);

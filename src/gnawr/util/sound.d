@@ -6,7 +6,6 @@ import derelict.sdl.mixer;
 class Sound {
 public:
   static int fadeoutSpeed = 1280;
-  static string fileDir = "sound/";
   
   static void init() {
     if(SDL_InitSubSystem(SDL_INIT_AUDIO) < 0)
@@ -31,14 +30,14 @@ public:
   }
   
   void loadMusic(string name) {
-    string fileName = fileDir ~ name;
+    string fileName = soundDir ~ name;
     music = Mix_LoadMUS(cast(const(char*))fileName);
     if(!music)
       throw new Exception("error: " ~ name ~ " not found");
   }
   
   void loadChunk(string name, int channel) {
-    string fileName = fileDir ~ name;
+    string fileName = soundDir ~ name;
     //chunk = Mix_LoadWAV(cast(const(char*))fileName);
     chunk = Mix_LoadWAV(fileName);
     if(!chunk)

@@ -2,11 +2,12 @@ module gnawr.bitfont;
 
 import derelict.sdl.sdl;
 import derelict.opengl.gl;
+import gnawr.gnawr;
 import gnawr.table.bitmap;
 
 void initBitFont() {
-  font[FontType.abs] = BitFont("abstract_12pt.bmp", tBitmapAbsRect, 36, SDL_Color(0, 0, 0, 255));
-  font[FontType.squ] = BitFont("square_48pt.bmp", tBitmapSquRect, 40, SDL_Color(0, 0, 0, 255));
+  font[FontType.abs] = BitFont("image/abstract_12pt.bmp", tBitmapAbsRect, 36, SDL_Color(0, 0, 0, 255));
+  font[FontType.squ] = BitFont("image/square_48pt.bmp", tBitmapSquRect, 40, SDL_Color(0, 0, 0, 255));
 }
 
 void closeBitFont() {
