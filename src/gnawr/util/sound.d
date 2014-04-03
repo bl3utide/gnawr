@@ -1,5 +1,6 @@
 module gnawr.util.sound;
 
+import gnawr.gnawr;
 import derelict.sdl.sdl;
 import derelict.sdl.mixer;
 

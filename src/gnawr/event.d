@@ -1,5 +1,6 @@
 module gnawr.event;
 
+debug { import std.stdio; }
 import derelict.sdl.sdl;
 import gnawr.render;
 
@@ -75,19 +76,40 @@ public:
       on[i] = false;
   }
   
-  bool isQuit() { return on[0]; }
+  bool isQuit() {
+    debug { if(on[0]) writeln("ctl-pushed: Escape"); }
+    return on[0];
+  }
 
-  bool isUpPushed() { return on[1]; }
+  bool isUpPushed() {
+    debug { if(on[1]) writeln("ctl-pushed: w"); }
+    return on[1];
+  }
 
-  bool isDownPushed() { return on[2]; }
+  bool isDownPushed() {
+    debug { if(on[2]) writeln("ctl-pushed: s"); }
+    return on[2];
+  }
 
-  bool isLeftPushed() { return on[3]; }
+  bool isLeftPushed() {
+    debug { if(on[3]) writeln("ctl-pushed: a"); }
+    return on[3];
+  }
 
-  bool isRightPushed() { return on[4]; }
+  bool isRightPushed() {
+    debug { if(on[4]) writeln("ctl-pushed: d"); }
+    return on[4];
+  }
 
-  bool isButton1Pushed() { return on[5]; }
+  bool isButton1Pushed() {
+    debug { if(on[5]) writeln("ctl-pushed: button1"); }
+    return on[5];
+  }
 
-  bool isButton2Pushed() { return on[6]; }
+  bool isButton2Pushed() {
+    debug { if(on[6]) writeln("ctl-pushed: button2"); }
+    return on[6];
+  }
 
   bool isUpPressed() {
     return
